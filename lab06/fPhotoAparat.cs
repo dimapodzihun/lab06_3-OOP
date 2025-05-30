@@ -55,5 +55,13 @@ namespace lab06
                 chbHasAutofokus.Checked = thePhotoAparat.HasAutofokus;
             }
         }
+
+        private void btnCalculateMaxPhotos_Click(object sender, EventArgs e)
+        {
+            thePhotoAparat.MemoryCapacity = int.Parse(tbmemory.Text.Trim());
+            thePhotoAparat.PhotoSizeMB = double.Parse(tbsize.Text.Trim());
+            int calculation= thePhotoAparat.CalculateMaxPhotos();
+            tbShowCalculateMaxPhotos.Text = Convert.ToString(calculation);
+        }
     }
 }

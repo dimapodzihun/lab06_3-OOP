@@ -70,7 +70,7 @@
             this.btnExit});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -80,7 +80,7 @@
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(29, 28);
+            this.btnAdd.Size = new System.Drawing.Size(29, 24);
             this.btnAdd.Text = "Додавати запис";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -130,7 +130,7 @@
             this.btnSaveAsText.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveAsText.Image")));
             this.btnSaveAsText.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSaveAsText.Name = "btnSaveAsText";
-            this.btnSaveAsText.Size = new System.Drawing.Size(29, 28);
+            this.btnSaveAsText.Size = new System.Drawing.Size(29, 24);
             this.btnSaveAsText.Text = "a";
             this.btnSaveAsText.ToolTipText = "Зберегти у текстовому форматі\r\n";
             this.btnSaveAsText.Click += new System.EventHandler(this.btnSaveAsText_Click);
@@ -141,7 +141,7 @@
             this.btnSaveAsBinary.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveAsBinary.Image")));
             this.btnSaveAsBinary.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSaveAsBinary.Name = "btnSaveAsBinary";
-            this.btnSaveAsBinary.Size = new System.Drawing.Size(29, 28);
+            this.btnSaveAsBinary.Size = new System.Drawing.Size(29, 24);
             this.btnSaveAsBinary.Text = "toolStripButton2";
             this.btnSaveAsBinary.ToolTipText = "Зберегти у бінарному форматі";
             this.btnSaveAsBinary.Click += new System.EventHandler(this.btnSaveAsBinary_Click);
@@ -152,7 +152,7 @@
             this.btnOpenFormText.Image = ((System.Drawing.Image)(resources.GetObject("btnOpenFormText.Image")));
             this.btnOpenFormText.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOpenFormText.Name = "btnOpenFormText";
-            this.btnOpenFormText.Size = new System.Drawing.Size(29, 28);
+            this.btnOpenFormText.Size = new System.Drawing.Size(29, 24);
             this.btnOpenFormText.Text = "toolStripButton3";
             this.btnOpenFormText.ToolTipText = "Читати в текстовому форматі";
             this.btnOpenFormText.Click += new System.EventHandler(this.btnOpenFormText_Click);
@@ -163,7 +163,7 @@
             this.btnOpenFormBinary.Image = ((System.Drawing.Image)(resources.GetObject("btnOpenFormBinary.Image")));
             this.btnOpenFormBinary.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOpenFormBinary.Name = "btnOpenFormBinary";
-            this.btnOpenFormBinary.Size = new System.Drawing.Size(29, 28);
+            this.btnOpenFormBinary.Size = new System.Drawing.Size(29, 24);
             this.btnOpenFormBinary.Text = "toolStripButton4";
             this.btnOpenFormBinary.ToolTipText = "Читати в бінарному форматі";
             this.btnOpenFormBinary.Click += new System.EventHandler(this.btnOpenFormBinary_Click);
@@ -185,9 +185,9 @@
             // 
             // splitter1
             // 
-            this.splitter1.Location = new System.Drawing.Point(0, 31);
+            this.splitter1.Location = new System.Drawing.Point(0, 27);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 419);
+            this.splitter1.Size = new System.Drawing.Size(3, 423);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             // 
@@ -199,12 +199,12 @@
             this.gvPhotoAparats.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvPhotoAparats.DataSource = this.bindSrcPhotoAparats;
             this.gvPhotoAparats.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvPhotoAparats.Location = new System.Drawing.Point(3, 31);
+            this.gvPhotoAparats.Location = new System.Drawing.Point(3, 27);
             this.gvPhotoAparats.Name = "gvPhotoAparats";
             this.gvPhotoAparats.ReadOnly = true;
             this.gvPhotoAparats.RowHeadersWidth = 51;
             this.gvPhotoAparats.RowTemplate.Height = 24;
-            this.gvPhotoAparats.Size = new System.Drawing.Size(797, 419);
+            this.gvPhotoAparats.Size = new System.Drawing.Size(797, 423);
             this.gvPhotoAparats.TabIndex = 2;
             // 
             // fMain
@@ -217,7 +217,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Лабораторна робота №5";
+            this.Text = "Лабораторна робота №6";
             this.Load += new System.EventHandler(this.fMain_Load);
             this.Resize += new System.EventHandler(this.fMain_Resize);
             this.toolStrip1.ResumeLayout(false);

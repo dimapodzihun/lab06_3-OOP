@@ -64,7 +64,7 @@ namespace lab06
             column.Width = 100;
             gvPhotoAparats.Columns.Add(column);
 
-          
+    
 
             column = new DataGridViewCheckBoxColumn();
             column.DataPropertyName = "hasFlash";
@@ -75,7 +75,15 @@ namespace lab06
             column = new DataGridViewCheckBoxColumn();
             column.DataPropertyName = "hasAutofokus";
             column.Name = "Автофокус";
-            column.Width = 80;
+            column.Width = 80;  
+            gvPhotoAparats.Columns.Add(column);
+
+
+            gvPhotoAparats.DataSource = bindSrcPhotoAparats;
+            column = new DataGridViewTextBoxColumn();
+            column.DataPropertyName = "CalculatedMaxPhotos";
+            column.Name = "Максимальна кількість фото";
+            column.Width = 90;
             gvPhotoAparats.Columns.Add(column);
 
             bindSrcPhotoAparats.Add(new PhotoAparat("Canon", "EOS R5", 45, 10.0, 128, 20.0,true, false));
@@ -307,5 +315,6 @@ namespace lab06
             }
 
         }
+
     }
 }

@@ -46,6 +46,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
+            this.btnCalculateMaxPhotos = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbShowCalculateMaxPhotos = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -233,11 +236,42 @@
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
+            // btnCalculateMaxPhotos
+            // 
+            this.btnCalculateMaxPhotos.Location = new System.Drawing.Point(19, 512);
+            this.btnCalculateMaxPhotos.Name = "btnCalculateMaxPhotos";
+            this.btnCalculateMaxPhotos.Size = new System.Drawing.Size(127, 53);
+            this.btnCalculateMaxPhotos.TabIndex = 23;
+            this.btnCalculateMaxPhotos.Text = "Обрахунок";
+            this.btnCalculateMaxPhotos.UseVisualStyleBackColor = true;
+            this.btnCalculateMaxPhotos.Click += new System.EventHandler(this.btnCalculateMaxPhotos_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(4, 476);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(236, 16);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Максимальна кількість фотографій";
+            // 
+            // tbShowCalculateMaxPhotos
+            // 
+            this.tbShowCalculateMaxPhotos.Location = new System.Drawing.Point(297, 470);
+            this.tbShowCalculateMaxPhotos.Margin = new System.Windows.Forms.Padding(4);
+            this.tbShowCalculateMaxPhotos.Name = "tbShowCalculateMaxPhotos";
+            this.tbShowCalculateMaxPhotos.Size = new System.Drawing.Size(290, 22);
+            this.tbShowCalculateMaxPhotos.TabIndex = 25;
+            // 
             // fPhotoAparat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 681);
+            this.Controls.Add(this.tbShowCalculateMaxPhotos);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnCalculateMaxPhotos);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCancel);
@@ -250,6 +284,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -273,5 +308,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Button btnCalculateMaxPhotos;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbShowCalculateMaxPhotos;
     }
 }
