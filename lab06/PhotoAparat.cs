@@ -18,11 +18,11 @@ namespace lab06
 
         public override int CalculateMaxPhotos()
         {
-            return (int)((MemoryCapacity * 1024) / PhotoSizeMB);
+             return (int)((MemoryCapacity * 1024) / PhotoSizeMB); 
         }
         public int CalculatedMaxPhotos
         {
-            get { return CalculateMaxPhotos(); }
+            get{ return CalculateMaxPhotos();  }
         }
     }
 

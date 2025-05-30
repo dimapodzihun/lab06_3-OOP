@@ -58,10 +58,18 @@ namespace lab06
 
         private void btnCalculateMaxPhotos_Click(object sender, EventArgs e)
         {
-            thePhotoAparat.MemoryCapacity = int.Parse(tbmemory.Text.Trim());
-            thePhotoAparat.PhotoSizeMB = double.Parse(tbsize.Text.Trim());
-            int calculation= thePhotoAparat.CalculateMaxPhotos();
-            tbShowCalculateMaxPhotos.Text = Convert.ToString(calculation);
+            ICamera cameras = new PhotoAparat(
+         tbBrand.Text,
+         tbModel.Text,
+         Convert.ToInt32(tbmegapixel.Text),
+         Convert.ToDouble(tbzoom.Text),
+         Convert.ToInt32(tbmemory.Text),
+         Convert.ToDouble(tbsize.Text),
+         chbHasFlash.Checked,
+         chbHasAutofokus.Checked);
+
+            int calculation = cameras.CalculateMaxPhotos();
+            tbShowCalculateMaxPhotos.Text = calculation.ToString();
         }
     }
 }
